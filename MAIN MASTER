@@ -1,75 +1,109 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
- 
-<channels>
-    <channels_info>
-      <title>[COLOR yellow]Bienvenidos a CRIS IPTV [/COLOR]</title>
-      <genre>IPTV</genre>
-      <description>Lista de canales IPTV</description>
-      <thumbnail>http://1.bp.blogspot.com/-LvMlqDGGi5w/VfHcSKKf-qI/AAAAAAAAEx8/LSns1UE3nIM/s1600/Logo%2BNuevo.jpg</thumbnail>
-      <fanart>http://kodi.tv/wp-content/uploads/banner-sbs-11-600x336.png</fanart>
-      <date>29.06.2015</date>
-      <credits>Gracias a Ecuafulltotal</credits>
-    </channels_info>
-<channels>
+
+<item>
+<title>                          [COLOR tomato][B]´´ BIENVENIDOS A Cris IPTV ´´[/B][/COLOR]   </title>
+<link>$doregex[openDialog]</link>
+<regex>
+<name>openDialog</name>
+<expres><![CDATA[#$pyFunction
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    __addon__ = xbmcaddon.Addon()
+    __addonname__ = __addon__.getAddonInfo('name')     
+    line1 = "Do not host any these streams"
+    line2 = "That can be found online"
+    line3 = "Copyrigth violation issues to the company" 
+    xbmcgui.Dialog().ok(__addonname__, line1, line2, line3)
+    return 
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://legionworldtv.com/240x240/freeworld.png</thumbnail>
+<fanart>http://legionworldtv.com/240x240/fanart.jpg</fanart>
+</item>
+
+<item>
+<title>[B][COLOR aqua]==========================================================================================[/COLOR][/B]</title>
+<link>http://Ignoreme</link>
+<externallink>http://main.txt</externallink>
+<thumbnail>http://icons.iconarchive.com/icons/kalangozilla/skrynium-black/256/punisher-icon.png</thumbnail>
+<fanart>http://www.wallpaperup.com/uploads/wallpapers/2013/12/16/197406/54df26048323f74b219da0dca522e1cb.jpg</fanart>
+</item>
 
  
-<channel>
-      <name>[COLOR cyan][/COLOR][COLOR yellow]                                                           Bienvenidos a CRIS IPTV[/COLOR]</name>
-  <thumbnail>http://1.bp.blogspot.com/-LvMlqDGGi5w/VfHcSKKf-qI/AAAAAAAAEx8/LSns1UE3nIM/s1600/Logo%2BNuevo.jpg</thumbnail>
-<fanart>http://maxprint.pl/kodi-hd.jpg</fanart>
-<link>http://ignoreme</link>
-   <externallink>http://pastebin.com</externallink>
-</channel>
-  </channels>
- 
-   
- 
- 
- 
-<channels>
- 
-<channel>
-      <name>[COLOR cyan][/COLOR][COLOR light blue]                                            Hecho Por:[/COLOR][COLOR yellow] [/COLOR]Cristhian Santander[COLOR yellow][COLOR  lime][/COLOR]  [/COLOR]</name>
-  <thumbnail>http://kentuckyrec.com/site/wp-content/uploads/2013/07/Update.jpg</thumbnail>
-<fanart>http://maxprint.pl/kodi-hd.jpg</fanart>
-<link>http://ignoreme</link>
-   <externallink>http://pastebin.com</externallink>
-</channel>
-  </channels>
- 
- 
- 
+<item>
+<title>       [COLOR silver][B]CRIS IPTV te Brinda el mejor que hay en canales[/B][/COLOR]</title>
+<link>$doregex[openDialog]</link>
+<regex>
+<name>openDialog</name>
+<expres><![CDATA[#$pyFunction
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    __addon__ = xbmcaddon.Addon()
+    __addonname__ = __addon__.getAddonInfo('name')     
+    line1 = "Do not host any these streams"
+    line2 = "That can be found online"
+    line3 = "Copyrigth violation issues to the company" 
+    xbmcgui.Dialog().ok(__addonname__, line1, line2, line3)
+    return 
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex><thumbnail>http://legionworldtv.com/240x240/freeworld.png</thumbnail>
+<fanart>http://legionworldtv.com/240x240/fanart.jpg</fanart>
+</item>
 
 
- 
+<item>
+<title>                         [COLOR silver][B]Peliculas, series y muchos mas...[/B][/COLOR]</title>
+<link>http://ignorame</link>
+<externallink>http://ignorame</externallink>
+<thumbnail>http://legionworldtv.com/240x240/freeworld.png</thumbnail>
+<fanart>http://legionworldtv.com/240x240/fanart.jpg</fanart>
+</item>
 
+<item>
+<title>             [COLOR silver][B]      lo mas interesante es en dos idiomas...[/B][/COLOR]</title>
+<link>http://ignorame</link>
+<externallink>http://ignorame</externallink>
+<thumbnail>http://legionworldtv.com/240x240/freeworld.png</thumbnail>
+<fanart>http://legionworldtv.com/240x240/fanart.jpg</fanart>
+</item>
 
-<channels>
- 
-<channel>
-      <name>[COLOR cyan][COLOR  lime]•  [/COLOR] Español [/COLOR]</name>
-  <thumbnail>http://elcorreoweb.es/documents/10157/0/600x400/0c0/0d0/none/10703/ONGH/image_content_19328631_20171025222415.jpg</thumbnail>
+<item>
+<title>                     [COLOR yellow][B]     hecho por ´´Cristhian Santander´´[/B][/COLOR]</title>
+<link>http://ignorame</link>
+<externallink>http://ignorame</externallink>
+<thumbnail>http://legionworldtv.com/240x240/freeworld.png</thumbnail>
+<fanart>http://legionworldtv.com/240x240/fanart.jpg</fanart>
+</item>
+
+<item>
+<title>[B][COLOR aqua]==========================================================================================[/COLOR][/B]</title>
+<link>http://Ignoreme</link>
+<externallink>http://main.txt</externallink>
+<thumbnail>http://www.hdfondos.net/file/248/728x410/16:9/bandera-de-paraguay_812910374.jpg</thumbnail>
 <fanart>https://1.bp.blogspot.com/-w28pj1yqWks/Wv9Ttj4NstI/AAAAAAAAAFU/OBfjyFwkVhUZnOBxto4lUbqJRMq0Z839ACLcBGAs/s1600/LOGO%2BCRIS%2B2.jpg</fanart>
-<link>http://ignoreme</link>
-   <externallink>https://pastebin.com/raw/XbkjMHn1</externallink>
-</channel>
-  </channels>
- 
- 
+</item>
 
+ <item>
+<title>[COLOR lightblue][B]Idioma Español[/B][/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>http://legionworldtv.com/240x240/freeworld.png</thumbnail>
+<fanart>http://legionworldtv.com/240x240/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/Mity2018/Addons/master/MAIN%20ESPA%C3%91OL</externallink>
+</item>
 
- 
-
-
- 
- 
-<channels>
- 
-<channel>
-      <name>[COLOR cyan][COLOR  lime]•  [/COLOR] Portugues [/COLOR]</name>
-  <thumbnail>https://s3.pixers.pics/pixers/700/FO/60/32/11/70/700_FO60321170_6b5e5adb7b42a65082b9c45ea1f5770d.jpg</thumbnail>
+<item>
+<title>[COLOR lightblue][B]Portugues[/B][/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>https://s3.pixers.pics/pixers/700/FO/60/32/11/70/700_FO60321170_6b5e5adb7b42a65082b9c45ea1f5770d.jpg</thumbnail>
 <fanart>https://1.bp.blogspot.com/-w28pj1yqWks/Wv9Ttj4NstI/AAAAAAAAAFU/OBfjyFwkVhUZnOBxto4lUbqJRMq0Z839ACLcBGAs/s1600/LOGO%2BCRIS%2B2.jpg</fanart>
-<link>http://ignoreme</link>
-   <externallink>https://pastebin.com/raw/1bikgrJ1</externallink>
-</channel>
-  </channels>
+<externallink>https://raw.githubusercontent.com/Mity2018/Addons/master/MAIN%20PORTUGUES</externallink>
+</item>
+ 
+ 
+ 
