@@ -1,0 +1,659 @@
+<item> 
+<title>[B][COLOR yellow]PELICULAS [/COLOR][COLOR white] LATINAS [/COLOR][COLOR dodgerblue] 211 [/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://tutecno-pro.net/wp-content/uploads/2015/11/Peliculas-HD.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/YiYoeK/movies-latino-avi-43292/list,4,9</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/YiYoeK/movies-latino-avi-43292/list,4,9</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://tutecno-pro.net/wp-content/uploads/2015/11/Peliculas-HD.png</thumbnail>
+  </item>
+
+<item> 
+<title>[B][COLOR yellow]PELICULAS [/COLOR][COLOR white] EN HD [/COLOR][COLOR dodgerblue] SEPTIEMBRE 2018 [/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://miracomohacerlo.com/wp-content/uploads/2017/08/3-14-1024x576.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/quiqueps2010/pelis-2018-103539/list,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/quiqueps2010/pelis-2018-103539/list,1,2</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://miracomohacerlo.com/wp-content/uploads/2017/08/3-14-1024x576.jpg</thumbnail>
+  </item>
+
+
+<item> 
+<title>[B][COLOR yellow]LA PELICULA[/COLOR][COLOR white] MAS [/COLOR][COLOR dodgerblue]COMPLETA[/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://i.blogs.es/3acb48/espinof-peliculas-mas-esperadas-estrenos-cine-2018/450_1000.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/danonaba89/newcollection-46197/list,1,50</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/danonaba89/newcollection-46197/list,1,50</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://i.blogs.es/3acb48/espinof-peliculas-mas-esperadas-estrenos-cine-2018/450_1000.jpg</thumbnail>
+  </item>
+
+
+<item> 
+<title>[B][COLOR yellow]PELICULAS[/COLOR][COLOR white] SUPER [/COLOR][COLOR dodgerblue]HD[/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://2.bp.blogspot.com/-p4k-uV0PR3Q/WH5bRZ1UwuI/AAAAAAAAAEA/zgA03J5WhHEBIc8xsybHN-up-DlujBknACK4B/s400/Logo%2BMEGA%2BPel%25C3%25ADculas%2BHD.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/javier-mospan/peliculas-dual-audio-74164/list,1,6</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/javier-mospan/peliculas-dual-audio-74164/list,1,6</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://2.bp.blogspot.com/-p4k-uV0PR3Q/WH5bRZ1UwuI/AAAAAAAAAEA/zgA03J5WhHEBIc8xsybHN-up-DlujBknACK4B/s400/Logo%2BMEGA%2BPel%25C3%25ADculas%2BHD.png</thumbnail>
+  </item>
+
+
+<item> 
+<title>[B][COLOR yellow] PELICULAS [/COLOR][COLOR white] SUPER [/COLOR][COLOR dodgerblue]VARIADAS [/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://i.ytimg.com/vi/3nKA1QnPM8c/maxresdefault.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/jml/peliculas-25581/list,1,14</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/jml/peliculas-25581/list,1,14</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://i.ytimg.com/vi/3nKA1QnPM8c/maxresdefault.jpg</thumbnail>
+  </item>
+
+
+
+<item> 
+<title>[B][COLOR yellow]PELICULAS[/COLOR][COLOR white] DE [/COLOR][COLOR dodgerblue]ACCION [/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://http2.mlstatic.com/peliculas-de-estenos-series-2018-en-calidad-hd-D_NQ_NP_808671-MLV27238548756_042018-F.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/monnet/peliculas-75-83659/list,1,4</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/monnet/peliculas-75-83659/list,1,4</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://http2.mlstatic.com/peliculas-de-estenos-series-2018-en-calidad-hd-D_NQ_NP_808671-MLV27238548756_042018-F.jpg</thumbnail>
+  </item>
+  
+  
+  <item> 
+<title>[B][COLOR yellow]PELICULAS[/COLOR][COLOR white] DE [/COLOR][COLOR dodgerblue]TERROR[/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://static.vix.com/es/sites/default/files/styles/large/public/a/actores_peliculas_de_terror.jpg?itok=RxVqTaHR</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/Jeviathan/cine-terror-23445/list,1,5</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/Jeviathan/cine-terror-23445/list,1,5</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://static.vix.com/es/sites/default/files/styles/large/public/a/actores_peliculas_de_terror.jpg?itok=RxVqTaHR</thumbnail>
+  </item>
+  
+  
+  <item> 
+<title>[B][COLOR yellow]PELICULAS[/COLOR][COLOR white] VARIADAS [/COLOR][COLOR dodgerblue]256[/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://2.bp.blogspot.com/-on0_u9Htq8A/US4ImJLZ86I/AAAAAAAAABE/8PEYZsUQqzg/s1600/PELICULAS_BLURAY.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/marcos20/peticiones-16957/list,1,11</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/marcos20/peticiones-16957/list,1,11</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://2.bp.blogspot.com/-on0_u9Htq8A/US4ImJLZ86I/AAAAAAAAABE/8PEYZsUQqzg/s1600/PELICULAS_BLURAY.jpg</thumbnail>
+  </item>
+
+<item> 
+<title>[B][COLOR yellow]CINE[/COLOR][COLOR white] DE [/COLOR][COLOR dodgerblue]COMEDIA[/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://i.ytimg.com/vi/5N6vw3xDtus/maxresdefault.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/JGPELICULAS/cine-de-comedia-90257/list,1,5</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/JGPELICULAS/cine-de-comedia-90257/list,1,5</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://i.ytimg.com/vi/5N6vw3xDtus/maxresdefault.jpg</thumbnail>
+  </item>
+  
+  
+  <item> 
+<title>[B][COLOR yellow]PELICULAS[/COLOR][COLOR white] DEL [/COLOR][COLOR dodgerblue]2017[/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://i.ytimg.com/vi/qi0QsTWbCps/maxresdefault.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/JGPELICULAS/peliculas-2017-88640/list,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/JGPELICULAS/peliculas-2017-88640/list,1,2</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://i.ytimg.com/vi/qi0QsTWbCps/maxresdefault.jpg</thumbnail>
+  </item>
+  
+  <item> 
+<title>[B][COLOR yellow] PELICULAS[/COLOR][COLOR white] FULL [/COLOR][COLOR dodgerblue]HD[/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://i.ytimg.com/vi/y0keyNTKrtA/maxresdefault.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/oscaraday/micro-hd-1080-52170/list,1,2</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/oscaraday/micro-hd-1080-52170/list,1,2</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://i.ytimg.com/vi/y0keyNTKrtA/maxresdefault.jpg</thumbnail>
+  </item>
+  
+  <item> 
+<title>[B][COLOR yellow] SELECCION [/COLOR][COLOR white] DE [/COLOR][COLOR dodgerblue]PELICULAS 426[/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://i.blogs.es/0c9924/los-estrenos-del-verano-2017/450_1000.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/Padri/mis-peliculas-23818/list,1,19</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/Padri/mis-peliculas-23818/list,1,19</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://i.blogs.es/0c9924/los-estrenos-del-verano-2017/450_1000.jpg</thumbnail>
+  </item>
+  
+  <item> 
+<title>[B][COLOR yellow]SUPER[/COLOR][COLOR white] COLECCION[/COLOR][COLOR dodgerblue][/COLOR] HD [/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://static1.appsda.com/android-screenshot/peliculashd_4f5e6a2eedd27_full.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/danonaba89/fileuploader-46197/list,1,46</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/danonaba89/fileuploader-46197/list,1,46</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://static1.appsda.com/android-screenshot/peliculashd_4f5e6a2eedd27_full.jpg</thumbnail>
+  </item>
+  
+  
