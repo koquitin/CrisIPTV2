@@ -1,0 +1,158 @@
+<item>
+<title>[COLOR red]* [/COLOR][B][COLOR blue]FILMES[/COLOR][COLOR white] BOM 2 [/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR tomato][makelist.param1][/COLOR]</title>
+<link>plugin://plugin.video.youtube/play/?video_id=[makelist.param2]</link>
+<thumbnail>https://cdn.forbes.com.mx/2017/08/kubrick-P-640x360.jpg</thumbnail>
+]]></listrepeat>
+<expres>title="(.*?)".*?watch\?v=(.*?)[",&amp;]</expres>
+<page>https://www.youtube.com/watch?v=8vKzFCPZbQ4&list=PLbOYxfav_qm5h4vB7LXG1e2dSHtod2_YN</page>
+</regex>
+</item>
+
+<item>
+<title> A força das Águas </title>
+<link>plugin://plugin.video.youtube/play/?video_id=5gc6DCU8k7E</link>
+<thumbnail>http://3.bp.blogspot.com/-SxzW_s9OEsU/U9hWClLnCbI/AAAAAAABoFg/ZRnwQuuy0mU/s1600/%C3%9Altima+Bala.jpg</thumbnail>
+</item>
+
+<item>
+<title> A Ultima Bala </title>
+<link>plugin://plugin.video.youtube/play/?video_id=YYJnuORIIMw</link>
+<thumbnail>http://www.cineplayers.com/img/cartazes/18600_poster.jpg</thumbnail>
+</item>
+
+<item>
+<title> O HOMEM INVISÍVEL </title>
+<link>plugin://plugin.video.youtube/play/?video_id=Yqjg38arvNU</link>
+<thumbnail>http://www.cineplayers.com/img/cartazes/18600_poster.jpg</thumbnail>
+</item>
+
+<item>
+<title> CAOS NA PRISÃO </title>
+<link>plugin://plugin.video.youtube/play/?video_id=1Lb6uiqYWXQ</link>
+<thumbnail>https://i.imgur.com/ktcJ9ZD.jpg</thumbnail>
+</item>
+
+<item>
+<title>O Jogo do Exterminador </title>
+<link>plugin://plugin.video.youtube/play/?video_id=PjVfyN9GabU</link>
+<thumbnail>https://i.pinimg.com/originals/6b/cb/44/6bcb44a9e392b76630488f2f74d937db.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Comando Kill</title>
+<link>plugin://plugin.video.youtube/play/?video_id=S5FbYVQ7AXE</link>
+<thumbnail>https://i.pinimg.com/originals/68/ab/f7/68abf7e98c9f726912278eb2cd3f4f95.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Legião do Mal</title>
+<link>plugin://plugin.video.youtube/play/?video_id=uoOae4te7ag</link>
+<thumbnail>http://1.bp.blogspot.com/--bk6sCMDv1M/VpaflsCGZpI/AAAAAAAAOxM/O2tAeDb46DE/s1600/La%2BHorde%2B%25280%2529.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Power Rangers </title>
+<link>plugin://plugin.video.youtube/play/?video_id=OKege46GqOY</link>
+<thumbnail>http://www.gorila.sk/i/imgs_orig/316/799316.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>JUMANJI : Bem Vindo à Selva 2018</title>
+<link>plugin://plugin.video.youtube/play/?video_id=FRW7XRoKuns</link>
+<thumbnail>https://i.pinimg.com/originals/2e/3a/93/2e3a938ff397d3280755defa41baa150.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Halo Nightfall</title>
+<link>plugin://plugin.video.youtube/play/?video_id=CA1RiU4EOe4</link>
+<thumbnail>https://m.limitsizamca.org/s/2Ysftdu.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Noite de Tubarão</title>
+<link>plugin://plugin.video.youtube/play/?video_id=j7QBy9SX0Ks</link>
+<thumbnail>https://i.pinimg.com/originals/e2/47/f2/e247f20b9c8f81e0849029a9c7b060b4.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Nunca Diga Seu Nome</title>
+<link>plugin://plugin.video.youtube/play/?video_id=B7TeKhqHol4</link>
+<thumbnail>https://i.pinimg.com/originals/ee/7e/16/ee7e16b6787f78e7bd49c4bdace0910f.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Venom</title>
+<link>plugin://plugin.video.youtube/play/?video_id=4PvSBOueTWE</link>
+<thumbnail>http://fr.web.img4.acsta.net/medias/nmedia/18/36/24/12/18464750.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>STICKMAN </title>
+<link>plugin://plugin.video.youtube/play/?video_id=6TzqJOP6mZs</link>
+<thumbnail>https://pics.filmaffinity.com/stickman_tv-948970631-large.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Entrega Mortal</title>
+<link>plugin://plugin.video.youtube/play/?video_id=IF4XPj61uDc</link>
+<thumbnail>http://ecx.images-amazon.com/images/I/91z3A6Dcz4L._SL1500_.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Terremoto 10.0</title>
+<link>plugin://plugin.video.youtube/play/?video_id=ulLhVaouvzU</link>
+<thumbnail>https://i.pinimg.com/originals/71/34/32/71343214d862360e9f543677fa32620d.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Meteoro</title>
+<link>plugin://plugin.video.youtube/play/?video_id=ktwQx80QGiI</link>
+<thumbnail>http://www.dominiosfantasticos.com.br/meteorapc.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Esquadrão Tático</title>
+<link>plugin://plugin.video.youtube/play/?video_id=QuUk6hZLths</link>
+<thumbnail>https://s-media-cache-ak0.pinimg.com/originals/9a/df/3b/9adf3bf02d0fac29c31bd01ff1250724.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>A Arte de Roubar</title>
+<link>plugin://plugin.video.youtube/play/?video_id=Tnz63P2ENJk</link>
+<thumbnail>http://img.i7filmes.com/?src=aHR0cDovL2ZpbG1lc29ubGluZWk3Lm5ldC9pbWFnZXNfL2luZGV4LnBocD9zcmM9aHR0cDovLzMuYnAuYmxvZ3Nwb3QuY29tLy0wUnp6el9sak5uOC9VODBYV0pUVUZHSS9BQUFBQUFBQUt5cy9wTVQxRnozUTJjby9zMTYwMC9Sb3ViYXIrZSt1bWErQXJ0ZS5qcGc=</thumbnail>
+</item>
+ 
+<item>
+<title>Pandora</title>
+<link>plugin://plugin.video.youtube/play/?video_id=FWSvTpAyOjw</link>
+<thumbnail>http://www.zoommovie.com/dvd1/dvd-1-10242.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Emergência Máxima</title>
+<link>plugin://plugin.video.youtube/play/?video_id=j6aZ1Hhtss8</link>
+<thumbnail>https://i.ytimg.com/vi/j6aZ1Hhtss8/hqdefault.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Vinganca Fatal</title>
+<link>plugin://plugin.video.youtube/play/?video_id=DdznfT8apBg</link>
+<thumbnail>https://i.imgur.com/C7zwUbs.jpg</thumbnail>
+</item>
+ 
+<item>
+<title>Uma Cidade sem Lei﻿</title>
+<link>plugin://plugin.video.youtube/play/?video_id=zRHKWIU3rVc</link>
+<thumbnail>https://images.justwatch.com/poster/9382547/s592</thumbnail>
+</item>
+ 
+<item>
+<title>O Estrangeiro</title>
+<link>plugin://plugin.video.youtube/play/?video_id=*********</link>
+<thumbnail>https://ingresso-a.akamaihd.net/img/cinema/cartaz/20786-cartaz.jpg</thumbnail>
+</item>
